@@ -7,11 +7,11 @@
       "dev": "next dev --webpack",
       "build": "next build --webpack",
       "start": "next start",
-
-   "prisma:generate": "cross-env DATABASE_URL=\"postgresql://neondb_owner:npg_8fjUzNa1BObk@ep-still-brook-a8h979du-pooler.eastus2.azure.neon.tech/neondb?sslmode=require&channel_binding=require\" prisma generate --schema=prisma/schema.prisma",
-   "prisma:migrate": "cross-env DATABASE_URL=\"postgresql://neondb_owner:npg_8fjUzNa1BObk@ep-still-brook-a8h979du-pooler.eastus2.azure.neon.tech/neondb?sslmode=require&channel_binding=require\" prisma migrate dev --name init --schema=prisma/schema.prisma"
+      "prisma:generate": "cross-env DATABASE_URL=\"postgresql://neondb_owner:npg_8fjUzNa1BObk@ep-still-brook-a8h979du-pooler.eastus2.azure.neon.tech/neondb?sslmode=require&channel_binding=require\" prisma generate --schema=prisma/schema.prisma",
+      "prisma:migrate": "cross-env DATABASE_URL=\"postgresql://neondb_owner:npg_8fjUzNa1BObk@ep-still-brook-a8h979du-pooler.eastus2.azure.neon.tech/neondb?sslmode=require&channel_binding=require\" prisma migrate dev --name init --schema=prisma/schema.prisma"
    },
    "dependencies": {
+      "@clerk/nextjs": "^6.34.0",
       "@prisma/client": "^6.18.0",
       "next": "16.0.0",
       "react": "19.2.0",
